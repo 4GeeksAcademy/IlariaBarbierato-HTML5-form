@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href=" https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free/css/all.min.css">
+</head>
+<body>
+    <div class="container">
+        <form class="row g-3 border border-2 rounded m-5">
+            <div class="col-12 m-0 border-bottom border-2 rounded-top p-2 ps-3 bg-light"><h2 class="fw-semibold">Payment form example</h2></div>
+            <div class="col-md-12 px-3">
+              <div class="alert alert-danger py-2 fw-semibold" aria-hidden="true" role="alert">
+                Some fields are missing.
+              </div>
+            </div>
+            <div class="col-md-5 px-3">
+                <label for="card" class="form-label">Card #</label>
+                <input type="number" class="form-control" id="card" placeholder="XXXXXXXXXXXXXXXX" required>
+              </div>
+            <div class="col-md-3 px-3">
+                <label for="CVC" class="form-label">CVC #</label>
+                <input type="number" class="form-control" id="CVC" placeholder="0000" required>
+            </div>
+            <div class="col-md-4 px-3">
+                <label for="amount" class="form-label">Amount</label>
+                <div class="input-group mb-3">
+                  <span class="input-group-text">$</span>
+                  <input type="text" class="form-control" aria-label="Amount (to the nearest dollar)" required placeholder="Amount">
+                </div>
+            </div>
+            <div class="col-md-6 px-3">
+              <label for="name" class="form-label">Name</label>
+              <input type="text" class="form-control" id="name" required>
+            </div>
+            <div class="col-md-6 px-3">
+              <label for="lastname" class="form-label">Lastname</label>
+              <input type="text" class="form-control" id="lastname" required>
+            </div>
+            <div class="col-md-6 px-3">
+              <label for="inputCity" class="form-label">City</label>
+              <input type="text" class="form-control" id="inputCity" required>
+            </div>
+            <div class="col-md-3 px-3">
+              <label for="inputState" class="form-label">State</label>
+              <select id="inputState" class="form-select" required>
+                <option selected>Pick a state</option>
+                <option>...</option>
+              </select>
+            </div>
+            <div class="col-md-3 px-3">
+              <label for="inputPostalCode" class="form-label">Postal Code</label>
+              <input type="text" class="form-control" id="inputPostalCode" required>
+            </div>
+            <div class="col-md-6 px-3">
+              <div>
+                <label for="name" class="form-label">We accept:</label>
+              </div>
+              <div class="fs-4 text">
+                <input type="radio" name="payment" value="mastercard">
+                <label for="mastercard" class="me-3"><i class="fa-brands fa-cc-mastercard"></i></label>
+                <input type="radio" name="payment" value="visa">
+                <label for="visa" class="me-3"><i class="fa-brands fa-cc-visa"></i></label> 
+                <input type="radio" name="payment" value="diners-club">
+                <label for="diners-club" class="me-3"><i class="fa-brands fa-cc-diners-club"></i></label>
+                <input type="radio" name="payment" value="amex">
+                <label for="amex" class="me-3"><i class="fa-brands fa-cc-amex"></i></label>
+              </div>
+            </div>
+            <div class="col-md-6 px-3 mb-5">
+              <div>
+                <label for="message" class="form-label">Message</label>
+              </div>
+              <div>
+                <textarea name="message" id="message" class="form-control border border-light-subtle rounded" rows="4" required></textarea>
+              </div>
+              <div style="font-size: small;" class="text-secondary text">Add any notes here.</div>
+            </div>
+            <div class="col-12 m-0 border-top border-2 rounded-bottom p-2 ps-3 bg-light d-flex justify-content-end">
+              <button type="submit" class="btn btn-secondary me-1">Cancel</button>
+              <button type="submit" class="btn btn-primary me-2">Send</button>
+            </div>
+          </form>
+    </div>
+</body>
+</html>
